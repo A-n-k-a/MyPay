@@ -21,6 +21,8 @@ if(inUA(wechat)){
         if(qqSwitch){
         window.location.href="static/qq.html";
     }
+}else if(userAgent.match(/QQ\//i)){
+    window.location.href="static/qq.html";
 }
 }else{
     alert("无法识别的客户端！");
